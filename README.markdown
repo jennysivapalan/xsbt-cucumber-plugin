@@ -213,6 +213,10 @@ Requests for features can be posted to the issues list or emailed to the author.
 
 ## Release History ##
 
+### 0.7.3 ###
+
+Upgrade to cucumber-jvm version 1.1.3. This fixes, amongst other things, data tables.
+
 ### 0.7.2 ###
 
 Fix for issue #16. Failing cucumber tests now cause the build to report an error.

@@ -4,7 +4,7 @@ import Keys._
 object Settings {
   val buildOrganization = "templemore"
   val buildScalaVersion = "2.9.2"
-  val buildVersion      = "0.7.2"
+  val buildVersion      = "0.7.3"
 
   val buildSettings = Defaults.defaultSettings ++
                       Seq (organization  := buildOrganization,
@@ -17,7 +17,7 @@ object Settings {
 object Dependencies {
 
   private val CucumberVersionForScala2_9 = "1.0.9"
-  private val CucumberVersionForScala2_10 = "1.1.1"
+  private val CucumberVersionForScala2_10 = "1.1.3"
 
   def cucumberScala(scalaVersion: String) = {
     def cucumberVersion = if ( scalaVersion.startsWith("2.10") ) CucumberVersionForScala2_10 else CucumberVersionForScala2_9
